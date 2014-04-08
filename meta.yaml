@@ -1,0 +1,30 @@
+package:
+  name: ruby
+  version: 2.1.1
+
+build:
+  number: 1
+
+source:
+  fn: ruby-2.1.1.tar.gz
+  url: http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.1.tar.gz
+  md5: e57fdbb8ed56e70c43f39c79da1654b2
+
+test:
+  commands:
+    - ruby --version
+    - ruby -e 'puts "Hi, from Ruby!"'
+    - ruby -e 'require "rubygems"'
+    - gem --version
+
+requirements:
+  build:
+    - python
+    - yaml
+    - openssl
+  run:
+    - python
+
+about:
+  home: https://www.ruby-lang.org/
+  license: BSD
