@@ -3,7 +3,7 @@ package:
   version: 2.1.1
 
 build:
-  number: 2
+  number: 3
 
 source:
   fn: ruby-2.1.1.tar.gz
@@ -21,7 +21,7 @@ requirements:
   build:
     - python
     - yaml
-    - openssl
+    - openssl 1.0.1g
     - zlib
   run:
     - python
