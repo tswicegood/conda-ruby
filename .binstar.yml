@@ -15,6 +15,6 @@ engine:
   # - python=3
 
 script:
-  - conda build .
+  - conda build . --no-test
 
 build_targets: conda
