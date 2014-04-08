@@ -1,0 +1,19 @@
+package: ruby
+user: wakari
+
+platform:
+  # - linux-32
+  - linux-64
+  # - osx-64
+
+install:
+  - conda config -f --add channels https://conda.binstar.org/wakari
+
+engine:
+  - python=2
+  # - python=3
+
+script:
+  - conda build .
+
+build_targets: conda
