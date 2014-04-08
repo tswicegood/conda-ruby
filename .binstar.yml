@@ -8,7 +8,7 @@ platform:
 
 install:
   - sudo yum erase -q gcc gcc-c++
-  - sudo yum install -q gcc gcc-c++
+  - sudo yum install -q gcc gcc-c++ zlib-devel
 
 engine:
   - python=2
