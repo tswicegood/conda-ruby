@@ -21,7 +21,7 @@ requirements:
   build:
     - python
     - yaml
-    - openssl 1.0.1g
+    - openssl >=1.0.1g
     - zlib
   run:
     - python
